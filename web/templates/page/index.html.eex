@@ -1,0 +1,4 @@
+<section id="log">
+  <%= safe messages(@messages) %>
+</section>
+

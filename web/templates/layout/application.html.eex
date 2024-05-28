@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      EXILE – Freenode IRC logs
+    </title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <section id="channels">
+      <section id="calendar">
+        <%= safe calendar(@channel, @date) %>
+      </section>
+      <ul>
+        <li class="current">
+          <a href="/">Console</a>
+        </li>
+        <%= safe channels(@channels, @date, @channel) %>
+      </ul>
+    </section>
+    <%= @inner %>
+  </body>
+</html>
+
